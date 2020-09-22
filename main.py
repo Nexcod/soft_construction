@@ -1,10 +1,12 @@
 import typer
-from solution.py import method_two
+
+from myparser import get_data
+from solution import method_two
 from tabulate import tabulate
 
-from parser import get_data
 
 app = typer.Typer()
+
 
 
 @app.command()
