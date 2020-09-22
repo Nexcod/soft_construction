@@ -54,7 +54,4 @@ def method_two():
             break
         d = d + STEP
 
-    print(d)
-
-
-method_two()
+    return d

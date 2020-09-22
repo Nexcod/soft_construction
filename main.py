@@ -1,7 +1,7 @@
 import typer
 
 from myparser import get_data
-from solution import method_two
+from solution import method_two as mt
 from tabulate import tabulate
 
 
@@ -15,8 +15,8 @@ def method_one():
 
 
 @app.command()
-def method_twoo():
-    method_two()
+def method_two():
+    print(mt())
 
 
 @app.command()
