@@ -1,5 +1,4 @@
 import typer
-from solution.py import method_two
 from tabulate import tabulate
 
 from parser import get_data
@@ -13,8 +12,8 @@ def method_one():
 
 
 @app.command()
-def method_twoo():
-    method_two()
+def method_two():
+    pass
 
 
 @app.command()
