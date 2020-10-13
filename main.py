@@ -1,5 +1,5 @@
 import typer
-from solution.py import method_two
+from solution import method_two as petr_solution
 from tabulate import tabulate
 
 from parser import get_data
@@ -13,8 +13,8 @@ def method_one():
 
 
 @app.command()
-def method_twoo():
-    method_two()
+def method_two():
+    petr_solution()
 
 
 @app.command()

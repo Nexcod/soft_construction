@@ -55,6 +55,3 @@ def method_two():
         d = d + STEP
 
     print(d)
-
-
-method_two()
