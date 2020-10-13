@@ -1,6 +1,8 @@
 import typer
 from solution import method_two as petr_solution
+from stas_solution import main as stas_solution
 from tabulate import tabulate
+
 
 from parser import get_data
 
@@ -19,7 +21,7 @@ def method_two():
 
 @app.command()
 def method_three():
-    pass
+    stas_solution()
 
 
 @app.command()
