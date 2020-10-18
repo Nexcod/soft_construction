@@ -1,10 +1,9 @@
 import typer
 from solution import method_two as petr_solution
-from stas_solution import main as stas_solution
 from tabulate import tabulate
-
-
 from parser import get_data
+from stas_solution import *
+from findRoot import *
 
 app = typer.Typer()
 
@@ -21,9 +20,11 @@ def method_two():
 
 @app.command()
 def method_three():
-    stas_solution()
+	findRoot()
 
-
+	
+	
+	
 @app.command()
 def method_four():
     pass
