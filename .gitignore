@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-main.py
 # C extensions
 *.so
 
@@ -30,7 +29,6 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
