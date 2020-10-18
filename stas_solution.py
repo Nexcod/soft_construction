@@ -1,5 +1,6 @@
 import math
 from max_number import maximum1
+from findRoot import findCoefficient
 from parser import get_data
 def three_equation(array,array_1):
 	x_1 = []
@@ -38,17 +39,18 @@ def findTheDerivativeOfTheTwoPoint():
 	print(result)
 	return result
 
-def findRoot():
+def findAppoximateRootValue():
+	count = 1
+	root = 0
 	k = maximum1()
-	firstDerivative = findTheDerivativeOfTheFirstPoint()
-	print(firstDerivative)
-	if firstDerivative > 0:
-		c = -1/k
+	coefficient = findCoefficient()
+	for x in range(len(array_1)):
+		root = 30.5 + coefficient *(1/30.5 - count + 1) - (26*array_1[x]/((30.5 + 1)*array_1[x] - (count * array_1[x])))
+		count += 1
+		if root > 30.5 and root < 30.95:
+			return root
 	else:
-		c = 1/k
-	root = 30.5 + c *(1/30.5 - 3) - (26*4/((30.5 + 1)*4 - (4 * 4)))
-	print(root)
-	return root
+		print("no root")
 
 array_1 = ([int(x[1])for x in get_data()])
 array = [26, 27, 28, 29, 30, 30.5, 31, 32, 33, 34, 35, 38, 40, 45, 50, 54, 69, 100, 1010, 2000, 2010,10000, 10001, 99900,
