@@ -4,6 +4,7 @@ from tabulate import tabulate
 from parser import get_data
 from stas_solution import *
 from findRoot import *
+from max_number import *
 
 app = typer.Typer()
 
@@ -20,7 +21,11 @@ def method_two():
 
 @app.command()
 def method_three():
-	findRoot()
+	s = findAppoximateRootValue()
+	print(s)
+	checkRoot()
+
+
 
 	
 	

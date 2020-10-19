@@ -1,13 +1,13 @@
-import stas_solution as solution
-
+import stas_solution as s 
+from max_number import *
+# нахождения коэффициента
 def findCoefficient():
-	firstDerivative = solution.findTheDerivativeOfTheFirstPoint()
-	print(firstDerivative)
+	maxNumber = maximum1()
+	firstDerivative = s.findTheDerivativeOfTheFirstPoint()
 	if firstDerivative > 0:
-		return -1/firstDerivative
+		return -1/maxNumber
 	else:
-		return 1/firstDerivative
+		return 1/maxNumber
 
-def findRoot():
-	root = solution.findAppoximateRootValue()
-	print(root)
+
+
