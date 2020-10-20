@@ -1,6 +1,12 @@
 import typer
 from solution import method_two as petr_solution
+
+from solution import method_two as mt
+from solution import find_k as K
+from solution import av_time as av
+from solution import time_to_test_end as time
 from tabulate import tabulate
+
 from parser import get_data
 from stas_solution import *
 from findRoot import *
@@ -16,7 +22,11 @@ def method_one():
 
 @app.command()
 def method_two():
-    petr_solution()
+    print("Максимальное правдоподобие для общего числа ошибок:", mt())
+    print("Коэффициент пропорциональности K: ", K())
+    print("Среднее время до появления следующей ошибки:", av())
+    print("Вреямя до окончания тестирования:", time())
+    petr_solution((get_data())
 
 
 @app.command()
@@ -26,10 +36,6 @@ def method_three():
 	checkRoot()
 
 
-
-	
-	
-	
 @app.command()
 def method_four():
     pass

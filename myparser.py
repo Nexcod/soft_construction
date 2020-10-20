@@ -2,6 +2,10 @@ from typing import List, Optional
 
 
 def get_data() -> List[Optional[List]]:
+    """
+
+    :rtype: object
+    """
     data = []
 
     with open('data.txt', 'r') as f:
