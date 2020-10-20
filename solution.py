@@ -44,6 +44,7 @@ def getSumI():
 
 
 def right(b):
+
     return (lenghA * getSum()) / ((b + 1) * getSum() - getSumI())
 
 
@@ -74,6 +75,5 @@ def time_to_test_end():
 
     for i in range(1, int(method_two()) - lenghA):
         result += (1 / i)
-
 
     return (1 / find_k()) * result
