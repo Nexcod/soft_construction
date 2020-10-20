@@ -1,7 +1,7 @@
 import math
 from max_number import maximum1, average
 from findRoot import findCoefficient
-from parser import get_data
+from myparser import get_data
 # нахождения отрезка на кординатной прямой, где лежит корень  
 def three_equation(array,array_1):
 	x_1 = []

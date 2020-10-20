@@ -7,10 +7,8 @@ from solution import av_time as av
 from solution import time_to_test_end as time
 from tabulate import tabulate
 
-from parser import get_data
+from myparser import get_data
 from stas_solution import *
-from findRoot import *
-from max_number import *
 
 app = typer.Typer()
 
@@ -26,14 +24,14 @@ def method_two():
     print("Коэффициент пропорциональности K: ", K())
     print("Среднее время до появления следующей ошибки:", av())
     print("Вреямя до окончания тестирования:", time())
-    petr_solution((get_data())
+    petr_solution()
 
 
 @app.command()
 def method_three():
-	s = findAppoximateRootValue()
-	print(s)
-	checkRoot()
+    s = findAppoximateRootValue()
+    print(s)
+    checkRoot()
 
 
 @app.command()

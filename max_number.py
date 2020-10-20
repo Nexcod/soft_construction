@@ -1,12 +1,14 @@
 import math
 import stas_solution as s
-from parser import get_data
+from myparser import get_data
+
 
 def maximum1():
 	first = s.findTheDerivativeOfTheFirstPoint()
 	two = s.findTheDerivativeOfTheTwoPoint()
 	m = math.fabs(max(first,two))
 	return m
+
 
 def average(array,array_1):
 	averages = 0
