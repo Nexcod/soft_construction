@@ -6,7 +6,8 @@ from solution import find_k as K
 from solution import av_time as av
 from solution import time_to_test_end as time
 from tabulate import tabulate
-
+from Hallstead_Metrics import Hallstead1and2
+from Hallstead_Metrics_equation import result
 from myparser import get_data
 from stas_solution import *
 
@@ -25,6 +26,10 @@ def method_two():
     print("Среднее время до появления следующей ошибки:", av())
     print("Вреямя до окончания тестирования:", time())
     petr_solution()
+    Hallstead1and2()
+    result()
+
+
 
 
 @app.command()
